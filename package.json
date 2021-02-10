@@ -1,11 +1,13 @@
 {
   "name": "notebook",
   "version": "1.0.0",
+  "homepage": "https://Kventista.github.io/Notebook/",
   "description": "> A Vue.js project",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "dev": "webpack serve --mode development --open"
+    "dev": "webpack serve --mode development --open",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Kventista",
   "license": "ISC",
@@ -15,7 +17,7 @@
     "@babel/preset-env": "^7.12.13",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.0.2",
-    "gh-pages": "^2.2.0",
+    "gh-pages": "^3.1.0",
     "html-webpack-plugin": "^5.0.0",
     "mini-css-extract-plugin": "^1.3.6",
     "webpack": "^5.21.2",
