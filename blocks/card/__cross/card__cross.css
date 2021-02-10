@@ -1,0 +1,9 @@
+.card__cross {
+  font-size: 24px;
+  color: #fff;
+  display: block;
+}
+
+.card__cross:hover {
+ color: #db2b2b;
+}

@@ -1,0 +1,42 @@
+
+.nav-box__chief {
+  transition: 1s ease transform;
+  background-image: linear-gradient(#273352, #131735);
+  border-radius: 7px;
+}
+
+.nav-box__chief:hover {
+  background-image: linear-gradient(90deg, #0e1752, #213568, #0e1752);
+}	
+
+.nav-box__chief:nth-child(odd) > .nav-box__link {
+  transform: skewX(5deg);
+}
+.nav-box__chief:nth-child(odd)::after {
+  right: -50%;
+  transform: skewX(-5deg) rotate(3deg);
+}				
+/* Even stuff */
+.nav-box__chief:nth-child(even){
+  transform: skewX(5deg) translateX(0);
+}
+.nav-box__chief:nth-child(even) > .nav-box__link {
+  transform: skewX(-5deg);
+}
+.nav-box__chief:nth-child(even)::after {
+  left: -50%;
+  transform: skewX(5deg) rotate(3deg);
+}
+
+.nav-box__chief:hover .nav-box__submenu {
+  opacity: 1;
+  visibility: visible;
+}		
+
+.nav-box__chief:hover .nav-box__chief:nth-child(even){
+  transform: skewX(5deg) translateX(20px);			
+}
+
+.nav-box__chief:hover .nav-box__chief:nth-child(odd){
+  transform: skewX(-5deg) translateX(-20px);			
+}

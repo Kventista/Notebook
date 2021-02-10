@@ -1,0 +1,8 @@
+.header__logo {
+  height: 100px;
+}
+
+img.header__logo:hover {
+  transition: 7s;
+  transform: rotate(360deg); 
+}

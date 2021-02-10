@@ -1,0 +1,18 @@
+.nav-box__button-tag {
+  transform: skewX(-10deg);
+  margin: 0 10px;
+  display: block;
+  color: #b3a594;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'noto';
+  font-size: 24px;
+  /*width: 9%;*/
+  padding: 10px 10px;
+  text-align: center;
+}
+
+.nav-box__button-tag :hover {
+  color: #fff;
+  }
+ 

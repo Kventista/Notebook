@@ -1,0 +1,52 @@
+@import url('_active/header__button_active.css');
+
+.header__button:hover {
+  color: #e8e3de;
+}
+
+.header__button {
+  font-size: 22px;
+  position: relative;
+  margin: 0 10px;
+  padding: 5px 10px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+
+
+.header__button::before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 2px);
+  left: -100%;
+  width: 100%;
+  height: 4px;
+  background-image: linear-gradient(90deg, #0e1752, #213568, #0e1752);
+  transition: 0.5s;
+}
+
+.header__button:hover::before {
+  animation: animate .8s linear forwards; 
+}
+
+@keyframes animate {
+  0% {
+    top: calc(50% - 2px);
+    left: -100%;
+    height: 3px;
+    z-index: 1;
+  }
+  50% {
+    top: calc(50% - 2px);
+    left: 0;
+    height: 3px;
+    z-index: 1;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+  }
+}

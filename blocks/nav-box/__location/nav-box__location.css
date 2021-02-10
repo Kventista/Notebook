@@ -1,0 +1,5 @@
+.nav-box__location:after {
+  content: " ";
+  display: flex;
+  clear: both;
+}

@@ -1,0 +1,64 @@
+
+@font-face {
+    src: url('../fonts/test/18506.ttf');
+    font-family: 'proxima';
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    src: url('../fonts/test/NotoSans.woff');
+    font-family: 'noto';
+    font-style: normal;
+}
+
+@font-face {
+    src: url('../fonts/test/NotoSans-Bold.woff');
+    font-family: 'notoBold';
+}
+
+@font-face {
+    src: url('../fonts/test/NotoSans-Italic.woff');
+    font-family: 'notoIt';
+    font-style: normal;
+
+}
+
+
+@font-face {
+    src: url('../fonts/roboto-medium-webfont.woff');
+    font-family: 'roboto-medium';
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    src: url('../fonts/roboto-regular-webfont.woff');
+    font-family: 'roboto';
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    src: url('../fonts/robotoslab-regular-webfont.woff');
+    font-family: 'robotoslab';
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  src: url("../fonts/ArialRegular.woff") format("woff");
+  font-family: 'Arial';
+  font-weight: normal;
+  font-style:  normal;
+}
+
+@font-face {
+    src: url('../fonts/fontawesome-webfont.woff');
+    font-family: 'fontawesome';
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');

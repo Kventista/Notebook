@@ -1,0 +1,19 @@
+.nav-box__submenu {
+  position: absolute;
+  margin-left: -150%;
+  transform: skewX(-10deg);
+  opacity: 0;
+  visibility: hidden;	
+}
+
+.nav-box__submenu li {
+  background-color: #34495e;
+  position: relative;
+  overflow: hidden;		
+}						
+
+.nav-box__submenu > li:nth-child(odd){
+  transform: skewX(-5deg) translateX(0);
+}
+
+

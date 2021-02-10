@@ -1,0 +1,13 @@
+.nav-box__menu {		
+  list-style: none;
+  margin: 0;
+  width: fit-content;	
+}
+
+.nav-box__menu > li {
+  float: left;
+  position: relative;
+  transform: skewX(10deg);
+  background-image: linear-gradient(#273352, #131735);
+  border-radius: 7px;
+}

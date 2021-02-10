@@ -1,0 +1,25 @@
+
+.nav-box__knot   {
+  align-items: center;
+  width: 20%;
+  height: 100%;
+  color: #e8e3de;
+  border-right: 1px solid #ddd;
+  transition: .5s width;
+  overflow: hidden;
+  display: flex;
+}
+
+.nav-box__knot:last-child {
+  border-right: none;
+}
+
+.nav-box__knot:hover {
+  width: 60%;
+  color: #b3a594;
+}
+
+.nav-box__knot:hover .nav-box__full {
+  opacity: 1;
+  transition: 2s;
+}

@@ -1,0 +1,22 @@
+.card__checkbox-text {
+  font-size: 20px;
+	color: #b3a594;
+	display: inline-block;
+	cursor: pointer;
+}
+.card__checkbox-text:before {
+	content: '';
+	display: inline-block;
+	background: #201d47;
+	left: 0;
+	top: 5px;
+	height: 20px;
+	width: 20px;
+	margin-right: 10px;
+	border-radius: 80%;
+	box-shadow: 0px 1px 0 0 rgba(0, 0, 0, .2);
+	box-sizing: border-box;
+	border: 10px solid #fff; /*сделает очертания у круга*/
+	transition: border .3s ease;
+}
+

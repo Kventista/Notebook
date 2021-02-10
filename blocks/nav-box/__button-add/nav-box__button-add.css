@@ -1,0 +1,13 @@
+.nav-box__button-add {
+  font-size: 28px;
+  width: 9%;
+  background-color: #242426;
+  padding: 5px 10px;
+  text-align: center;
+
+}
+
+
+.nav-box__button-add:not(:hover) {
+    transition: 1s;
+}

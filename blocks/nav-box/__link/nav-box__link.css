@@ -1,0 +1,13 @@
+.nav-box__link {
+  display: block;
+  color: #b3a594;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'noto';
+  font-size: 14px;
+  padding: 1em 2em;
+}		
+.nav-box__link:hover {
+   color: #fff;
+}
+

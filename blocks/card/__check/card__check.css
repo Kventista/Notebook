@@ -1,0 +1,16 @@
+.card__check{
+  display: none;
+}
+
+.card__check:checked + .card__checkbox-text:before {
+	border-color: #fff;
+	border-width: 3px;
+} /*цвет круга после нажатия*/
+
+.card__check + .card__checkbox-text {
+	transition: color .7s ease;
+}
+.card__check:checked + .card__checkbox-text {
+	color: #201d47;
+	text-shadow: 0 0 21px rgba(152, 150, 191, 0.5), 0 0 10px rgba(175, 177, 244, 0.4), 0 0 2px #0d2364;}
+	 /*цвет текста после нажатия
