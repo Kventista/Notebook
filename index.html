@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Ксения Макарова">
+    <meta name="about-project" content="Сохраняй свои ссылки разумно">
+    <link rel="stylesheet" href="./vendor/normalize.css">
+    <link rel="icon" href="./images/logo.png">
+    <link rel="stylesheet" href="index.css">
+      <title>Planner-vue</title>
+  </head>
+  <body>
+	  <div class="page">
+    <div class="line">
+    <header class="header">
+      <img class="header__logo" alt="logo" src="./images/sea-lis.png">
+      <nav class="header__nav">
+        <button class="header__button header__button_active button" href="#">Welcome</button>
+        <button class="header__button header__button_active button" href="#">Sign UP</button>
+      </nav>
+  </header>
+    </div>  
+
+  <div class="content">
+    <div class="board">
+      <div class="board__nav">
+        <nav class="nav-box">
+          <div class="nav-box__knot">
+            <div class="nav-box__small">
+              <a title="Статьи"><i class="fa fa-address-book-o" aria-hidden="true"></i></a>
+            </div>
+              <div class="nav-box__full">Статьи</div>
+          </div>
+          <div class="nav-box__knot">
+            <div class="nav-box__small">
+              <a title="Рецепты">
+              <i class="fa fa-coffee" aria-hidden="true"></i>
+            </a>
+            </div>
+              <div class="nav-box__full">Рецепты</div>
+          </div>
+          <div class="nav-box__knot">
+            <div class="nav-box__small">
+              <a title="Книги">
+              <i class="fa fa-book" aria-hidden="true"></i>
+            </a>
+            </div>
+              <div class="nav-box__full">Книги</div>
+          </div>
+          <div class="nav-box__knot">
+            <div class="nav-box__small">
+              <a title="Музыка">
+              <i class="fa fa-music" aria-hidden="true"></i>
+            </a>
+            </div>
+              <div class="nav-box__full">Музыка</div>
+          </div>
+          <div class="nav-box__knot">
+            <div class="nav-box__small">
+              <a title="Фильмы">
+              <i class="fa fa-video-camera" aria-hidden="true"></i>
+            </a>
+            </div>
+              <div class="nav-box__full">Фильмы</div>
+          </div>
+        </nav>
+
+      <button class="nav-box__button-add button" v-on:click="warn('Пожалуйста, авторизуйтесь или пройдите регистрацию', $event)">
+        <i class="fa fa-plus" aria-hidden="true"></i>
+      </button>
+
+      <div class="nav-box__tags">
+        <ul class="nav-box__menu nav-box__location">
+          <li class="nav-box__chief">
+            <a class="nav-box__button-tag" href=""><i class="fa fa-tags" aria-hidden="true"></i></a>
+             <ul class="nav-box__submenu">
+               <li class="nav-box__chief"><a class="nav-box__link" href="">Позже</a></li>
+               <li class="nav-box__chief"><a class="nav-box__link" href="">Блог</a></li>
+               <li class="nav-box__chief"><a class="nav-box__link" href="">Выходные</a></li>
+               <li class="nav-box__chief"><a class="nav-box__link" href="">Про JS</a></li>
+               <li class="nav-box__chief"><a class="nav-box__link" href="">Позже</a></li>
+               <li class="nav-box__chief"><a class="nav-box__link" href="">Блог</a></li>
+               <li class="nav-box__chief"><a class="nav-box__link" href="">Выходные</a></li>
+               <li class="nav-box__chief"><a class="nav-box__link" href="">Про JS</a></li>
+             </ul>			
+           </li>
+         </ul>
+      </div>
+    </div>
+    
+    
+
+
+      <div class="cards">
+        <div class="card">
+          <div class="card__checkbox">
+            <input class="card__check" id="check" type="checkbox" name="check" value="check">
+            <label class="card__checkbox-text" for="check">Выполнено</label>
+            <span class="fa fa-times card__cross" aria-hidden="true"></span>
+          </div>
+              <div class="card__date">
+                  <h2 class="card__title">Заголовок статьи</h2>
+                  <div class="card__info">
+                    <img class="card__image" src="images/chainik.png">
+                    <p class="card__description">
+                      А девочка из конной полиции</br>
+                      С белым айфоном на белом жеребце</br>
+                    </p>
+                  </div>
+              </div>
+              <div class="card__optionally">
+                <a class="card__tag" rel="tag" href="">интересный</a>
+                <a class="card__tag" rel="tag" href="">классный</a>
+                <a class="card__tag" rel="tag" href="">тэг</a>
+              </div>
+            </div>
+        <div class="card">
+          <div class="card__checkbox">
+            <input class="card__check" id="check1" type="checkbox" name="check" value="check">
+            <label class="card__checkbox-text" for="check1">Выполнено</label>
+            <span class="fa fa-times card__cross" aria-hidden="true"></span>
+          </div>
+          <div class="card__date">
+              <h2 class="card__title">Заголовок статьи</h2>
+              <div class="card__info">
+                <img class="card__image" src="images/gora.jpg">
+                <p class="card__description">
+                  Ждёт в Инстаграме лайка от принца </br>
+                  И ждёт от Чёрной Пятницы низких цен</br>
+                  Мерно цокают копытца по улице</br>
+                </p>
+              </div>
+          </div>
+          <div class="card__optionally">
+            <a class="card__tag" rel="tag" href="">интересный</a>
+            <a class="card__tag" rel="tag" href="">классный</a>
+            <a class="card__tag" rel="tag" href="">тэг</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__checkbox">
+            <input class="card__check" id="check2" type="checkbox" name="check" value="check">
+            <label class="card__checkbox-text" for="check2">Выполнено</label>
+            <span class="fa fa-times card__cross" aria-hidden="true"></span>
+          </div>   
+          <div class="card__date">
+              <h2 class="card__title">Заголовок статьи</h2>
+              <div class="card__info">
+                <img class="card__image" src="images/priroda-gory-skaly.jpg">
+                <p class="card__description">
+                  Винтят демонстрантов мальчики-коллеги</br>
+                  Обсуждают рецепты подружки-умницы</br>
+                  В некогда заблокированной «телеге»</br>
+                </p>
+              </div>
+          </div>
+          <div class="card__optionally">
+            <a class="card__tag" rel="tag" href="">интересный</a>
+            <a class="card__tag" rel="tag" href="">классный</a>
+            <a class="card__tag" rel="tag" href="">тэг</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__checkbox">
+            <input class="card__check" id="check3" type="checkbox" name="check" value="check">
+            <label class="card__checkbox-text" for="check3">Выполнено</label>
+            <span class="fa fa-times card__cross" aria-hidden="true"></span>
+          </div>
+          <div class="card__date">
+              <h2 class="card__title">Заголовок статьи</h2>
+              <div class="card__info">
+                <img class="card__image" src="images/6848.jpg">
+                <p class="card__description">
+                  Она завтра купит в «Меге» наборчик «LEGO»</br>
+                  Для племянника на его рождения день</br>
+                  В наборе — автозак и три человека:</br>
+                </p>
+              </div>
+          </div>
+          <div class="card__optionally">
+            <a class="card__tag" rel="tag" href="">интересный</a>
+            <a class="card__tag" rel="tag" href="">классный</a>
+            <a class="card__tag" rel="tag" href="">тэг</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__checkbox">
+            <input class="card__check" id="check4" type="checkbox" name="check" value="check">
+            <label class="card__checkbox-text" for="check4">Выполнено</label>
+            <span class="fa fa-times card__cross" aria-hidden="true"></span>
+          </div>   
+          <div class="card__date">
+              <h2 class="card__title">Заголовок статьи</h2>
+              <div class="card__info">
+                <img class="card__image" src="images/kofe-stakany-napitok-korica.jpg">
+                <p class="card__description">
+                  Двое ментов на одного — всё как у людей</br>
+                  Всё как у людей</br>
+                </p>
+              </div>
+          </div>
+          <div class="card__optionally">
+            <a class="card__tag" rel="tag" href="">интересный</a>
+            <a class="card__tag" rel="tag" href="">классный</a>
+            <a class="card__tag" rel="tag" href="">тэг</a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
