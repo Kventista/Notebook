@@ -1,0 +1,13 @@
+.line {
+  border-bottom: 1px solid #e8e3de;
+  background-image: linear-gradient(#292d50e8, #171b24);
+}
+
+/*
+.line:hover {
+
+  background-image: url('../../images/test/1top.jpg');
+
+  position: sticky;
+top: 0px;
+}*/

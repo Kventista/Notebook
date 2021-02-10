@@ -1,0 +1,31 @@
+@import url('./__checkbox/card__checkbox.css');
+@import url('./__cross/card__cross.css');
+@import url('./__checkbox-text/card__checkbox-text.css');
+@import url('./__check/card__check.css');
+@import url('./__date/card__date.css');
+@import url('./__title/card__title.css');
+@import url('./__info/card__info.css');
+@import url('./__image/card__image.css');
+@import url('./__description/card__description.css');
+@import url('./__link/card__link.css');
+@import url('./__optionally/card__optionally.css');
+@import url('./__tag/card__tag.css');
+
+
+.card {
+border-radius: 16px;
+overflow: hidden;
+background-color: #dac09c;
+padding-bottom: 14px;
+flex-direction: column;
+justify-content: stretch;
+text-decoration: none;
+border: 2px solid #252643;
+box-shadow: inset 0 1px 1px #e4b877c2, inset 0 -1px 0px rgba(63, 59, 113, 0.2), 0 9px 16px 0 rgba(0, 0, 0, 0.3), 0 4px 3px 0 rgba(0, 0, 0, 0.3), 0 0 0 1px #2d2724e0;
+background-image: linear-gradient(#ffe4c9, #b99069);
+}
+
+.card:hover {
+transform: scale(1.05);
+transition: all 0.5s ease-in;
+}

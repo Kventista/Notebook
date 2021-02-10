@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Ксения Макарова">
     <meta name="about-project" content="Сохраняй свои ссылки разумно">
-    <link rel="stylesheet" href="./vendor/normalize.css">
-    <link rel="icon" href="./images/logo.png">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="vendor/normalize.css">
+    <link rel="icon" href="<%=require('./images/logo.png')%>">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
       <title>Planner-vue</title>
   </head>
+
   <body>
 	  <div class="page">
     <div class="line">
     <header class="header">
-      <img class="header__logo" alt="logo" src="./images/sea-lis.png">
+      <img class="header__logo" alt="logo" src="<%=require('./images/sea-lis.png')%>">
       <nav class="header__nav">
         <button class="header__button header__button_active button" href="#">Welcome</button>
         <button class="header__button header__button_active button" href="#">Sign UP</button>
@@ -103,7 +105,7 @@
               <div class="card__date">
                   <h2 class="card__title">Заголовок статьи</h2>
                   <div class="card__info">
-                    <img class="card__image" src="images/chainik.png">
+                    <img class="card__image" src="<%=require('./images/chainik.png')%>">
                     <p class="card__description">
                       А девочка из конной полиции</br>
                       С белым айфоном на белом жеребце</br>
@@ -125,7 +127,7 @@
           <div class="card__date">
               <h2 class="card__title">Заголовок статьи</h2>
               <div class="card__info">
-                <img class="card__image" src="images/gora.jpg">
+                <img class="card__image" src="<%=require('./images/gora.jpg')%>">
                 <p class="card__description">
                   Ждёт в Инстаграме лайка от принца </br>
                   И ждёт от Чёрной Пятницы низких цен</br>
@@ -148,7 +150,7 @@
           <div class="card__date">
               <h2 class="card__title">Заголовок статьи</h2>
               <div class="card__info">
-                <img class="card__image" src="images/priroda-gory-skaly.jpg">
+                <img class="card__image" src="<%=require('./images/priroda-gory-skaly.jpg')%>">
                 <p class="card__description">
                   Винтят демонстрантов мальчики-коллеги</br>
                   Обсуждают рецепты подружки-умницы</br>
@@ -171,7 +173,7 @@
           <div class="card__date">
               <h2 class="card__title">Заголовок статьи</h2>
               <div class="card__info">
-                <img class="card__image" src="images/6848.jpg">
+                <img class="card__image" src="<%=require('./images/6848.jpg')%>">
                 <p class="card__description">
                   Она завтра купит в «Меге» наборчик «LEGO»</br>
                   Для племянника на его рождения день</br>
@@ -194,7 +196,7 @@
           <div class="card__date">
               <h2 class="card__title">Заголовок статьи</h2>
               <div class="card__info">
-                <img class="card__image" src="images/kofe-stakany-napitok-korica.jpg">
+                <img class="card__image" src="<%=require('./images/kofe-stakany-napitok-korica.jpg')%>">
                 <p class="card__description">
                   Двое ментов на одного — всё как у людей</br>
                   Всё как у людей</br>
@@ -211,6 +213,6 @@
       </div>
     </div>
   </div>
-    <script src="src/index.js"></script>
+    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
   </body>
 </html>
