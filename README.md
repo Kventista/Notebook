@@ -1,6 +1,4 @@
-# vue
-
-> A Vue.js project
+## [Notebook](https://Kventista.github.io/Notebook/)
 
 ## Build Setup
 
