@@ -1,16 +1,16 @@
 ## [Notebook](https://Kventista.github.io/Notebook/)
 
-## Build Setup
+Сайт для сохранения и работы с заметками, ссылками и другой важной информации.
+Удобный вариант записной нижки онлайн формата.
+***
 
-``` bash
-# install dependencies
-npm install
 
-# serve with hot reload at localhost:8080
-npm run dev
+## Установка и запуск
+* копировать репозиторий;
+* установить Webpack;
+* установить npm;
+* `npm run dev` - запуск локально для разработки
+* `npm run build` - сборка бандла для production
+* `npm run deploy` - обновление версии на GitHub Pages
+***
 
-# build for production with minification
-npm run build
-```
-
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
